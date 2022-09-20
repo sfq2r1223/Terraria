@@ -30,4 +30,4 @@ void Chunk::setTheSizeChunk() noexcept
 }
 
 std::size_t Chunk::getSizeChunk() const noexcept { return sizeChunk;  }
-Chunk::ArrayChunk* Chunk::getVectorChunk() const noexcept { return chunk; }
+Chunk::ArrayChunk& Chunk::getVectorChunk() noexcept { return chunk; }

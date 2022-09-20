@@ -18,7 +18,7 @@ public:
 		const sf::Vector2f& playerPosition);
 
 	std::size_t getSizeChunk() const noexcept;
-	ArrayChunk* getVectorChunk() const noexcept;
+	ArrayChunk& getVectorChunk() noexcept;
 private:
 	void setTheSizeChunk() noexcept;
 	void createVectorFromStaticMetch();
