@@ -6,8 +6,8 @@ void WorldObject::setUpWorldObject(const std::string& nameObj,sf::Vector2i sizeO
 	setUpObject(sizeObj, hardnessObj, true);
 
 	this->hp =			hp;
-	this->onGround =	onGround;
-	this->massObj =		massObj;
+	this->onGround =		onGround;
+	this->massObj =			massObj;
 }
 
 void WorldObject::gravity() noexcept
