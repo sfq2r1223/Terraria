@@ -1,16 +1,9 @@
 #include "StaticMesh.h"
 
-void StaticMesh::setUpStaticMash(const std::filesystem::path& texturePath, const sf::Vector2i& size)
+void StaticMesh::setUpStaticMash(const std::string& nameObj, sf::Vector2i sizeObj)
 {
-	this->size = size;
+	setUpObject(sizeObj, false, false);
 
-	loadFile(texturePath);
-}
-
-void StaticMesh::loadFile(const std::filesystem::path& texturePath)
-{
-	if (!texture.loadFromFile(texturePath.string()))
-		throw std::exception("ERROR: StaticMesh::loadFile: failed loading file");
-
-	
+	this->sizeObj = sizeObj;
+	this->nameObj = nameObj;
 }

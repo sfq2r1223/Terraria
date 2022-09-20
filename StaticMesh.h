@@ -1,18 +1,19 @@
 #pragma once
 
+#include "Object.h"
+
 #include <SFML/Graphics.hpp>
 #include <filesystem>
 
-class StaticMesh
+class StaticMesh : public Object
 {
 public:
 	StaticMesh() = default;
 	~StaticMesh() = default;
 
-	void setUpStaticMash(const std::filesystem::path& texturePath, const sf::Vector2i& size);
-	void loadFile(const std::filesystem::path& texturePath);
+	void setUpStaticMash(const std::string& nameObj, sf::Vector2i sizeObj);
 private:
-	sf::Vector2i		size;
-	sf::Texture			texture;
+	std::string		nameObj;
+	sf::Vector2i	sizeObj;
 };
 
