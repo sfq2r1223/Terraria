@@ -14,6 +14,6 @@ public:
 	void setUpStaticMash(const std::string& nameObj, sf::Vector2i sizeObj);
 private:
 	std::string		nameObj;
-	sf::Vector2i	sizeObj;
+	sf::Vector2i		sizeObj;
 };
 
