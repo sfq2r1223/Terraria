@@ -23,10 +23,10 @@ private:
 	void setGroundBlocks();
 	//void getOverStaticMesh(sf::Vector2u counter);
 private:
-	sf::Vector2i							sizeMap;
+	sf::Vector2i								sizeMap;
 	std::size_t								numderOfDrawnChunks = 2u;
-	std::vector<std::vector<Chunk>>		    mapOfChunks;
-	std::vector<std::vector<Block>>			mapOfBlocks;
-	const std::size_t						sizeChunk = 15;
+	std::vector<std::vector<Chunk>>		   			        mapOfChunks;
+	std::vector<std::vector<Block>>						mapOfBlocks;
+	const std::size_t							sizeChunk = 15;
 };
 
